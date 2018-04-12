@@ -28,6 +28,11 @@ declare namespace koaBody {
         maxFieldsSize?: number;
         
         /**
+         * {Integer} Limits the size of uploaded file. If this value is exceeded, an 'error' event is emitted.
+         */
+        maxFileSize?: number;
+        
+        /**
          * {String} Sets the directory for placing file uploads in, default os.tmpDir()
          */
         uploadDir?: string;
